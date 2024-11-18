@@ -36,7 +36,7 @@ const Login = () => {
     try {
       // API call for login
       const res = await axios.post(
-        "http://localhost:5000/api/v1/login",
+        "https://spyne-assignment-yoq5.onrender.com/api/v1/login",
         { email, password },
         {
           headers: { "Content-Type": "application/json" },
