@@ -36,9 +36,7 @@ app.use("/api/v1", userRoute);
 app.use(err); 
 
 
-if(process.env.NODE_ENV == "production"){
-  app.use(express.static("client/build"))
-}
+
 // Server Initialization
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
