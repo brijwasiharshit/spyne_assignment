@@ -13,7 +13,7 @@ const UpdateCarDetails = () => {
   useEffect(() => {
     const fetchPreviousDetails = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/api/v1/car/${id}`, {
+        const res = await axios.get(`https://spyne-assignment-yoq5.onrender.com/api/v1/car/${id}`, {
           headers: { "Content-Type": "application/json" },
           withCredentials: true,
         });
@@ -48,7 +48,7 @@ const UpdateCarDetails = () => {
     setError(null);
 
     try {
-      await axios.put(`http://localhost:5000/api/v1/car/${id}`, formData, {
+      await axios.put(`https://spyne-assignment-yoq5.onrender.com/api/v1/car/${id}`, formData, {
         headers: { "Content-Type": "application/json" },
         withCredentials: true,
       });
